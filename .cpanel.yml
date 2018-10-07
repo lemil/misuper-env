@@ -1,0 +1,7 @@
+deployment:
+ tasks:
+  - export DEPLOYPATH=/home/misuper/public_html/
+  - git add -A /home/misuper/respositories/repo/*
+  - git commit -m "update from cpanel"
+  - git push
+  - /bin/cp README.txt $DEPLOYPATH
